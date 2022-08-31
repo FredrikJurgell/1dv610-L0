@@ -1,0 +1,11 @@
+<div id="divIndex">
+  <p>Hello! Please enter your name below! :)</p>
+  <form action="./" method="POST">
+    <input type="text" name="name" id="name" required>
+    <input type="submit">
+  </form>
+  {{#if viewData}}
+    <h1>Hello {{viewData.name}}!</h1>
+    <img src="{{viewData.gif}}" style="width:200px;height:200px;">
+  {{/if}}
+</div>
