@@ -36,7 +36,7 @@ export class GreetingController {
   async getGif (req, res, next) {
     try {
       const giphyApi = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.GIPHY_API_KEY}&q=hello`
-    
+
       const response = await fetch(giphyApi, {
         method: 'GET'
       })
